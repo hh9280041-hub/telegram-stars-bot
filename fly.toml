@@ -1,0 +1,13 @@
+app = "telegram-stars-bot-0o0wag"
+primary_region = "ams"
+
+[build]
+builder = "paketobuildpacks/builder:base"
+
+[processes]
+  app = "python bot.py"
+
+[[vm]]
+cpu_kind = "shared"
+cpus = 1
+memory_mb = 256
